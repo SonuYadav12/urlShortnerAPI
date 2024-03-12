@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This project contains url shortner api",
   "main": "server.js",
+  "endgines":{
+    "node":"14.x"
+  },
   "scripts": {
     "build": "npx tsc",
     "start": "npx tsc && node ./dist/server.js",
