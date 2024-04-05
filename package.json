@@ -2,18 +2,14 @@
   "name": "url-shortner-api",
   "version": "1.0.0",
   "description": "This project contains url shortner api",
-  "main": ".dist/server.js",
+  "main": "server.js",
+
   "scripts": {
-    "dev": "nodemon server.ts",
-    "build": "rimraf dist && tsc",
-    "ts.check": "tsc --project tsconfig.json ",
-    "add-build": "git add dist"
+    "build": "npx tsc",
+    "start": "npx tsc && node ./dist/server.js",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-  ],
   "author": "Sonu Kumar Yadav",
   "license": "ISC",
   "dependencies": {
